@@ -1,0 +1,462 @@
+{
+  "attack": {
+    "type": "attack",
+    "mod": "strength",
+    "skill": null,
+    "synonyms": ["stab", "slash", "swing", "strike", "smash", "hit", "claw", "bite", "bash"],
+    "flavor_text": {
+      "fail": [
+        "{player} swings but misses completely, leaving an opening for the enemy.",
+        "The attack from {player} is weak and ineffective.",
+        "{player}'s strike barely grazes the opponent, failing to do real damage."
+      ],
+      "moderate": [
+        "{player} hits the target with moderate force, causing some pain.",
+        "A solid blow by {player} shakes the enemy but doesn't fell them.",
+        "{player}'s attack lands, but without full impact."
+      ],
+      "success": [
+        "{player} lands a powerful hit, leaving the enemy reeling!",
+        "With precision, {player} strikes true and wounds the foe severely.",
+        "{player}'s attack breaks through defenses, causing critical damage!"
+      ]
+    }
+  },
+  "shoot": {
+    "type": "attack",
+    "mod": "dexterity",
+    "skill": null,
+    "synonyms": ["shoot", "fire", "loose", "nock", "launch", "release"],
+    "flavor_text": {
+      "fail": [
+        "{player}'s shot misses the target completely, the arrow flying wild.",
+        "The projectile slips past {player}'s aim and hits nothing.",
+        "{player} fumbles the shot, failing to hit the mark."
+      ],
+      "moderate": [
+        "{player} shoots and hits the target, but the damage is minimal.",
+        "A grazing hit by {player} causes some discomfort.",
+        "{player}'s shot lands, but the enemy shrugs off much of the pain."
+      ],
+      "success": [
+        "{player} fires a precise shot that hits the target squarely!",
+        "An expertly aimed arrow from {player} strikes the enemy true.",
+        "{player}'s shot pierces armor and wounds the foe critically!"
+      ]
+    }
+  },
+  "cast": {
+    "type": "attack",
+    "mod": "intelligence",
+    "skill": null,
+    "synonyms": ["cast", "fireball", "lightning bolt", "magic missile", "spell", "zap"],
+    "flavor_text": {
+      "fail": [
+        "{player} fumbles the spell, causing it to fizz out harmlessly.",
+        "The magic fizzles and fails to affect the target.",
+        "{player}'s spell misfires, wasting the magical energy."
+      ],
+      "moderate": [
+        "{player} casts a spell that partially affects the enemy.",
+        "The magic hits its mark but lacks full potency.",
+        "{player}'s spell causes moderate damage to the foe."
+      ],
+      "success": [
+        "{player} unleashes a devastating spell that devastates the enemy!",
+        "With perfect control, {player} casts a powerful spell, overwhelming the target.",
+        "{player}'s magic strikes true, leaving the enemy badly harmed!"
+      ]
+    }
+  },
+  "sneak": {
+    "type": "skill",
+    "mod": "dexterity",
+    "skill": "stealth",
+    "synonyms": ["sneak", "hide", "creep", "tiptoe", "skulk", "slip"],
+    "flavor_text": {
+      "fail": [
+        "{player} makes too much noise and is spotted immediately.",
+        "The shadows betray {player}, who is caught before hiding.",
+        "{player} stumbles and alerts the guards."
+      ],
+      "moderate": [
+        "{player} moves quietly but is partially noticed.",
+        "A nearly silent approach by {player}, though not perfect.",
+        "{player} blends into the background, but some noise gives them away."
+      ],
+      "success": [
+        "{player} vanishes completely into the shadows.",
+        "Silent and unseen, {player} moves past unnoticed.",
+        "{player}'s stealthy approach leaves no trace."
+      ]
+    }
+  },
+  "persuade": {
+    "type": "skill",
+    "mod": "charisma",
+    "skill": "persuasion",
+    "synonyms": ["persuade", "charm", "convince", "coax", "entreat", "urge"],
+    "flavor_text": {
+      "fail": [
+        "{player}'s arguments fall on deaf ears.",
+        "The target rejects {player}'s attempts at persuasion.",
+        "{player} fails to convince, leaving tensions high."
+      ],
+      "moderate": [
+        "{player}'s words cause some doubt but don't sway the target fully.",
+        "The target hesitates but remains unconvinced.",
+        "{player} makes a decent case, though unsure if it’s enough."
+      ],
+      "success": [
+        "The target is swayed by {player}'s convincing words.",
+        "{player}'s charm wins over the target completely.",
+        "Persuasion succeeds: the target agrees to {player}'s request."
+      ]
+    }
+  },
+  "intimidate": {
+    "type": "skill",
+    "mod": "charisma",
+    "skill": "intimidation",
+    "synonyms": ["scare", "threaten", "intimidate", "bully", "frighten", "menace"],
+    "flavor_text": {
+      "fail": [
+        "{player}'s threats are laughed off by the target.",
+        "The target scoffs at {player}'s attempt to intimidate.",
+        "{player} looks weak and fails to instill fear."
+      ],
+      "moderate": [
+        "{player} causes some hesitation in the target.",
+        "The target appears uneasy but not fully scared.",
+        "{player}'s presence causes tension, though no fear."
+      ],
+      "success": [
+        "The target backs down, visibly shaken by {player}.",
+        "{player}'s intimidation is unmistakable and effective.",
+        "Fear grips the target as {player} asserts dominance."
+      ]
+    }
+  },
+  "investigate": {
+    "type": "skill",
+    "mod": "intelligence",
+    "skill": "investigation",
+    "synonyms": ["search", "inspect", "investigate", "examine", "scrutinize", "probe"],
+    "flavor_text": {
+      "fail": [
+        "{player} misses crucial clues in the area.",
+        "The investigation yields no useful information.",
+        "{player} overlooks important details."
+      ],
+      "moderate": [
+        "{player} finds some hints but not the whole picture.",
+        "A few clues catch {player}'s attention.",
+        "{player} uncovers partial information."
+      ],
+      "success": [
+        "{player} discovers key evidence that sheds light on the mystery.",
+        "A thorough investigation by {player} reveals hidden secrets.",
+        "{player}'s keen eye uncovers the truth."
+      ]
+    }
+  },
+  "perceive": {
+    "type": "skill",
+    "mod": "wisdom",
+    "skill": "perception",
+    "synonyms": ["notice", "see", "spot", "hear", "perceive", "detect"],
+    "flavor_text": {
+      "fail": [
+        "{player} misses the important detail entirely.",
+        "The hidden danger escapes {player}'s notice.",
+        "{player} fails to detect anything unusual."
+      ],
+      "moderate": [
+        "{player} senses something is off but can’t quite identify it.",
+        "A vague impression comes to {player}.",
+        "{player} notices a faint clue but remains unsure."
+      ],
+      "success": [
+        "{player} spots the hidden trap just in time.",
+        "With sharp senses, {player} detects the subtle danger.",
+        "{player} uncovers the concealed secret."
+      ]
+    }
+  },
+  "acrobatics": {
+    "type": "skill",
+    "mod": "dexterity",
+    "skill": "acrobatics",
+    "synonyms": ["flip", "tumble", "dodge", "roll", "cartwheel", "somersault"],
+    "flavor_text": {
+      "fail": [
+        "{player} loses balance and falls awkwardly.",
+        "The attempted maneuver by {player} fails spectacularly.",
+        "{player} stumbles, unable to complete the move."
+      ],
+      "moderate": [
+        "{player} pulls off the move with some effort and minor flaws.",
+        "An average acrobatic feat by {player}, not perfect but effective.",
+        "{player} manages to dodge but not elegantly."
+      ],
+      "success": [
+        "{player} executes a flawless acrobatic move.",
+        "Graceful and precise, {player} easily avoids danger.",
+        "An impressive display of agility by {player}!"
+      ]
+    }
+  },
+  "arcana": {
+    "type": "skill",
+    "mod": "intelligence",
+    "skill": "arcana",
+    "synonyms": ["recall magic", "understand spell", "arcana", "identify magic", "analyze spell", "lore"],
+    "flavor_text": {
+      "fail": [
+        "{player} cannot recall the magical lore needed.",
+        "The arcane secrets elude {player} this time.",
+        "{player} fails to understand the spell’s nature."
+      ],
+      "moderate": [
+        "{player} remembers some magical details but is unsure.",
+        "A partial understanding of the magic comes to {player}.",
+        "{player} identifies some but not all arcane components."
+      ],
+      "success": [
+        "{player} expertly recognizes the spell’s properties.",
+        "With deep knowledge, {player} deciphers the arcane mystery.",
+        "{player} reveals the magic’s full nature."
+      ]
+    }
+  },
+  "deceive": {
+    "type": "skill",
+    "mod": "charisma",
+    "skill": "deception",
+    "synonyms": ["lie", "bluff", "deceive", "trick", "mislead", "fake"],
+    "flavor_text": {
+      "fail": [
+        "{player}'s lies are transparent and easily seen through.",
+        "The target sees through {player}'s deception immediately.",
+        "{player} fails to mislead, raising suspicion instead."
+      ],
+      "moderate": [
+        "{player} manages a partial bluff but leaves some doubts.",
+        "The deception convinces somewhat but not completely.",
+        "{player} creates some uncertainty but not full belief."
+      ],
+      "success": [
+        "{player}'s lie is convincing and accepted without question.",
+        "A masterful deception by {player} fools the target completely.",
+        "{player} spins a tale so believable the target is taken in."
+      ]
+    }
+  },
+  "survival": {
+    "type": "skill",
+    "mod": "wisdom",
+    "skill": "survival",
+    "synonyms": ["track", "hunt", "navigate", "survive", "scavenge", "endure"],
+    "flavor_text": {
+      "fail": [
+        "{player} gets lost and wastes precious time.",
+        "The harsh environment overwhelms {player}.",
+        "{player} fails to find any useful resources."
+      ],
+      "moderate": [
+        "{player} navigates with some difficulty, but manages to proceed.",
+        "A decent attempt at survival by {player}, though strained.",
+        "{player} finds some resources but not enough."
+      ],
+      "success": [
+        "{player} expertly tracks and finds what’s needed to survive.",
+        "Survival success: {player} thrives in the wilderness.",
+        "{player} navigates the terrain flawlessly and finds resources."
+      ]
+    }
+  },
+  "athletics": {
+    "type": "skill",
+    "mod": "strength",
+    "skill": "athletics",
+    "synonyms": ["climb", "jump", "swim", "grapple", "run", "lift"],
+    "flavor_text": {
+      "fail": [
+        "{player} struggles and fails the physical challenge.",
+        "The obstacle proves too much for {player}.",
+        "{player} stumbles and can’t complete the feat."
+      ],
+      "moderate": [
+        "{player} manages to get through but with difficulty.",
+        "A solid effort by {player}, though not without strain.",
+        "{player} succeeds, but not easily."
+      ],
+      "success": [
+        "{player} powers through the physical challenge with ease!",
+        "An impressive display of strength by {player}.",
+        "{player} conquers the obstacle effortlessly."
+      ]
+    }
+  },
+  "animal handling": {
+    "type": "skill",
+    "mod": "wisdom",
+    "skill": "animal handling",
+    "synonyms": ["calm animal", "handle beast", "ride", "train", "pet", "soothe"],
+    "flavor_text": {
+      "fail": [
+        "{player} fails to calm the animal, which grows agitated.",
+        "The beast resists {player}'s attempts at control.",
+        "{player}'s efforts to handle the animal only make it worse."
+      ],
+      "moderate": [
+        "{player} gains some control but the animal remains nervous.",
+        "A cautious approach by {player} calms the animal slightly.",
+        "{player} soothes the beast enough to prevent chaos."
+      ],
+      "success": [
+        "{player} expertly calms and controls the animal.",
+        "The beast responds well to {player}'s gentle handling.",
+        "{player} forms a bond, gaining full control of the animal."
+      ]
+    }
+  },
+  "history": {
+    "type": "skill",
+    "mod": "intelligence",
+    "skill": "history",
+    "synonyms": ["recall history", "know history", "remember event", "ancient lore", "historical fact", "past knowledge"],
+    "flavor_text": {
+      "fail": [
+        "{player} cannot remember the relevant historical facts.",
+        "The details of the past elude {player}.",
+        "{player} fails to recall any useful history."
+      ],
+      "moderate": [
+        "{player} recalls some details but is uncertain of their significance.",
+        "A partial memory of history comes to {player}.",
+        "{player} knows some facts but not the whole story."
+      ],
+      "success": [
+        "{player} recalls detailed and useful historical information.",
+        "With deep knowledge, {player} explains the significance clearly.",
+        "{player} provides a thorough understanding of the past."
+      ]
+    }
+  },
+  "insight": {
+    "type": "skill",
+    "mod": "wisdom",
+    "skill": "insight",
+    "synonyms": ["read emotions", "sense motive", "insight", "discern truth", "perceive intent", "intuition"],
+    "flavor_text": {
+      "fail": [
+        "{player} misreads the situation completely.",
+        "The true intentions escape {player}'s notice.",
+        "{player} fails to discern the underlying motives."
+      ],
+      "moderate": [
+        "{player} senses something but can’t fully grasp it.",
+        "A partial understanding of the motives comes to {player}.",
+        "{player} notices some truth but remains unsure."
+      ],
+      "success": [
+        "{player} reads the situation perfectly and discerns hidden motives.",
+        "With keen insight, {player} understands the true intentions.",
+        "{player} uncovers the full truth behind the facade."
+      ]
+    }
+  },
+  "medicine": {
+    "type": "skill",
+    "mod": "wisdom",
+    "skill": "medicine",
+    "synonyms": ["heal", "diagnose", "treat wound", "bandage", "medicate", "first aid"],
+    "flavor_text": {
+      "fail": [
+        "{player} misdiagnoses the injury, worsening the condition.",
+        "The treatment from {player} is ineffective or harmful.",
+        "{player} fails to heal the wound properly."
+      ],
+      "moderate": [
+        "{player} provides basic care, stabilizing the patient.",
+        "A competent effort by {player} that helps but doesn’t cure.",
+        "{player} treats the injury with limited success."
+      ],
+      "success": [
+        "{player} expertly heals the wounds, greatly aiding recovery.",
+        "With skillful hands, {player} treats the injury effectively.",
+        "{player}'s medical knowledge saves the patient’s life."
+      ]
+    }
+  },
+  "nature": {
+    "type": "skill",
+    "mod": "intelligence",
+    "skill": "nature",
+    "synonyms": ["know plants", "understand nature", "nature", "animal knowledge", "natural world", "ecology"],
+    "flavor_text": {
+      "fail": [
+        "{player} cannot identify the plant or animal.",
+        "The secrets of nature remain hidden from {player}.",
+        "{player} mistakes the natural signs entirely."
+      ],
+      "moderate": [
+        "{player} recognizes some aspects but lacks full understanding.",
+        "A partial grasp of the natural world comes to {player}.",
+        "{player} identifies the creature or plant with some uncertainty."
+      ],
+      "success": [
+        "{player} expertly identifies the flora or fauna.",
+        "With detailed knowledge, {player} explains the natural signs.",
+        "{player} understands the environment thoroughly."
+      ]
+    }
+  },
+  "performance": {
+    "type": "skill",
+    "mod": "charisma",
+    "skill": "performance",
+    "synonyms": ["perform", "entertain", "play music", "act", "sing", "dance"],
+    "flavor_text": {
+      "fail": [
+        "{player}'s performance falls flat and fails to impress.",
+        "The audience is unimpressed by {player}'s attempt.",
+        "{player} stumbles through the act, losing the crowd's interest."
+      ],
+      "moderate": [
+        "{player} delivers a decent performance with some flaws.",
+        "The audience is mildly entertained by {player}.",
+        "{player} holds the crowd's attention but lacks flair."
+      ],
+      "success": [
+        "The audience is captivated by {player}'s brilliant performance!",
+        "{player} shines on stage, earning applause and cheers.",
+        "An unforgettable display of talent from {player} wows the crowd."
+      ]
+    }
+  },
+  "religion": {
+    "type": "skill",
+    "mod": "intelligence",
+    "skill": "religion",
+    "synonyms": ["recall religion", "know god", "religion", "divine lore", "sacred texts", "faith"],
+    "flavor": {
+      "fail": "Your memory falters as you try to recall religious lore; the details remain frustratingly vague.",
+      "moderate": "You recall the general tenets of the religion in question, though some of the finer points escape you.",
+      "success": "You clearly remember sacred teachings and divine lore, confidently explaining the significance of the moment."
+    }
+  },
+  "sleight of hand": {
+    "type": "skill",
+    "mod": "dexterity",
+    "skill": "sleight of hand",
+    "synonyms": ["pickpocket", "palm", "steal", "filch", "swipe", "lift"],
+    "flavor": {
+      "fail": "Your hand twitches at the wrong moment—your target notices something's off.",
+      "moderate": "You nearly succeed, but there's a moment of hesitation that might give you away.",
+      "success": "With a swift, practiced motion, you complete the trick unnoticed—your hand faster than the eye."
+    }
+  }
+}
+
