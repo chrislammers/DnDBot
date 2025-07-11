@@ -1,0 +1,87 @@
+{
+  "Human": {
+    "ability_bonuses": {"str": 1, "dex": 1, "con": 1, "int": 1, "wis": 1, "cha": 1},
+    "features": ["Extra Language"],
+    "speed": 30
+  },
+  "Elf": {
+    "ability_bonuses": {"dex": 2},
+    "features": ["Darkvision", "Keen Senses", "Fey Ancestry", "Trance"],
+    "speed": 30
+  },
+  "High Elf": {
+    "ability_bonuses": {"dex": 2, "int": 1},
+    "features": ["Darkvision", "Keen Senses", "Fey Ancestry", "Trance", "Extra Cantrip"],
+    "speed": 30
+  },
+  "Wood Elf": {
+    "ability_bonuses": {"dex": 2, "wis": 1},
+    "features": ["Darkvision", "Keen Senses", "Fey Ancestry", "Trance", "Fleet of Foot", "Mask of the Wild"],
+    "speed": 35
+  },
+  "Dwarf": {
+    "ability_bonuses": {"con": 2},
+    "features": ["Darkvision", "Dwarven Resilience", "Stonecunning"],
+    "speed": 25
+  },
+  "Hill Dwarf": {
+    "ability_bonuses": {"con": 2, "wis": 1},
+    "features": ["Darkvision", "Dwarven Resilience", "Stonecunning", "Dwarven Toughness"],
+    "speed": 25
+  },
+  "Mountain Dwarf": {
+    "ability_bonuses": {"con": 2, "str": 2},
+    "features": ["Darkvision", "Dwarven Resilience", "Stonecunning", "Dwarven Armor Training"],
+    "speed": 25
+  },
+  "Halfling": {
+    "ability_bonuses": {"dex": 2},
+    "features": ["Lucky", "Brave", "Halfling Nimbleness"],
+    "speed": 25
+  },
+  "Lightfoot Halfling": {
+    "ability_bonuses": {"dex": 2, "cha": 1},
+    "features": ["Lucky", "Brave", "Halfling Nimbleness", "Naturally Stealthy"],
+    "speed": 25
+  },
+  "Stout Halfling": {
+    "ability_bonuses": {"dex": 2, "con": 1},
+    "features": ["Lucky", "Brave", "Halfling Nimbleness", "Stout Resilience"],
+    "speed": 25
+  },
+  "Dragonborn": {
+    "ability_bonuses": {"str": 2, "cha": 1},
+    "features": ["Draconic Ancestry", "Breath Weapon", "Damage Resistance"],
+    "speed": 30
+  },
+  "Gnome": {
+    "ability_bonuses": {"int": 2},
+    "features": ["Darkvision", "Gnome Cunning"],
+    "speed": 25
+  },
+  "Forest Gnome": {
+    "ability_bonuses": {"int": 2, "dex": 1},
+    "features": ["Darkvision", "Gnome Cunning", "Natural Illusionist", "Speak with Small Beasts"],
+    "speed": 25
+  },
+  "Rock Gnome": {
+    "ability_bonuses": {"int": 2, "con": 1},
+    "features": ["Darkvision", "Gnome Cunning", "Artificer’s Lore", "Tinker"],
+    "speed": 25
+  },
+  "Half-Elf": {
+    "ability_bonuses": {"cha": 2},
+    "features": ["Darkvision", "Fey Ancestry", "Skill Versatility"],
+    "speed": 30
+  },
+  "Half-Orc": {
+    "ability_bonuses": {"str": 2, "con": 1},
+    "features": ["Darkvision", "Menacing", "Relentless Endurance", "Savage Attacks"],
+    "speed": 30
+  },
+  "Tiefling": {
+    "ability_bonuses": {"int": 1, "cha": 2},
+    "features": ["Darkvision", "Hellish Resistance", "Infernal Legacy"],
+    "speed": 30
+  }
+}

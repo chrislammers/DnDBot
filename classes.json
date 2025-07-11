@@ -1,0 +1,132 @@
+{
+  "Barbarian": {
+    "primary_ability": "Strength",
+    "hit_die": "d12",
+    "saving_throws": ["Strength", "Constitution"],
+    "features": [
+      "Rage",
+      "Unarmored Defense",
+      "Reckless Attack",
+      "Danger Sense"
+    ]
+  },
+  "Bard": {
+    "primary_ability": "Charisma",
+    "hit_die": "d8",
+    "saving_throws": ["Dexterity", "Charisma"],
+    "features": [
+      "Bardic Inspiration",
+      "Spellcasting",
+      "Jack of All Trades",
+      "Song of Rest"
+    ]
+  },
+  "Cleric": {
+    "primary_ability": "Wisdom",
+    "hit_die": "d8",
+    "saving_throws": ["Wisdom", "Charisma"],
+    "features": [
+      "Spellcasting",
+      "Divine Domain",
+      "Channel Divinity",
+      "Divine Intervention"
+    ]
+  },
+  "Druid": {
+    "primary_ability": "Wisdom",
+    "hit_die": "d8",
+    "saving_throws": ["Intelligence", "Wisdom"],
+    "features": [
+      "Spellcasting",
+      "Wild Shape",
+      "Druid Circle"
+    ]
+  },
+  "Fighter": {
+    "primary_ability": "Strength or Dexterity",
+    "hit_die": "d10",
+    "saving_throws": ["Strength", "Constitution"],
+    "features": [
+      "Second Wind",
+      "Action Surge",
+      "Martial Archetype",
+      "Extra Attack"
+    ]
+  },
+  "Monk": {
+    "primary_ability": "Dexterity and Wisdom",
+    "hit_die": "d8",
+    "saving_throws": ["Strength", "Dexterity"],
+    "features": [
+      "Unarmored Defense",
+      "Martial Arts",
+      "Ki",
+      "Unarmored Movement"
+    ]
+  },
+  "Paladin": {
+    "primary_ability": "Strength and Charisma",
+    "hit_die": "d10",
+    "saving_throws": ["Wisdom", "Charisma"],
+    "features": [
+      "Divine Sense",
+      "Lay on Hands",
+      "Fighting Style",
+      "Spellcasting"
+    ]
+  },
+  "Ranger": {
+    "primary_ability": "Dexterity and Wisdom",
+    "hit_die": "d10",
+    "saving_throws": ["Strength", "Dexterity"],
+    "features": [
+      "Favored Enemy",
+      "Natural Explorer",
+      "Fighting Style",
+      "Spellcasting"
+    ]
+  },
+  "Rogue": {
+    "primary_ability": "Dexterity",
+    "hit_die": "d8",
+    "saving_throws": ["Dexterity", "Intelligence"],
+    "features": [
+      "Expertise",
+      "Sneak Attack",
+      "Thieves' Cant",
+      "Cunning Action"
+    ]
+  },
+  "Sorcerer": {
+    "primary_ability": "Charisma",
+    "hit_die": "d6",
+    "saving_throws": ["Constitution", "Charisma"],
+    "features": [
+      "Spellcasting",
+      "Sorcerous Origin",
+      "Font of Magic",
+      "Metamagic"
+    ]
+  },
+  "Warlock": {
+    "primary_ability": "Charisma",
+    "hit_die": "d8",
+    "saving_throws": ["Wisdom", "Charisma"],
+    "features": [
+      "Otherworldly Patron",
+      "Pact Magic",
+      "Eldritch Invocations",
+      "Pact Boon"
+    ]
+  },
+  "Wizard": {
+    "primary_ability": "Intelligence",
+    "hit_die": "d6",
+    "saving_throws": ["Intelligence", "Wisdom"],
+    "features": [
+      "Spellcasting",
+      "Arcane Recovery",
+      "Arcane Tradition"
+    ]
+  }
+}
